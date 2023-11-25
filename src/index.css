@@ -1,3 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+.hero{
+    background-image: url(./assets/img/herobg.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.swiper{
+    padding-top: 20px !important;
+    height: 350px !important;
+}
+.swiper-wrapper{
+    gap: 2rem !important;
+    margin-top: 20px !important;
+    height: 200px !important;
+
+}
+.swiper-slide{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    height: 200px !important;
+
+}
+.swiper-button-prev{
+    right: 60px !important; 
+    left: auto !important;
+    top: 10px !important;
+    border: 1px solid rgba(0,0,0,.5);
+    height: 2rem !important;
+    width: 2rem !important;
+    border-radius: 10px;
+    margin-top: 10px !important;
+}
+.swiper-button-next{
+    right: 20px !important;
+    left: auto !important;
+    top: 10px !important;
+    height: 2rem !important;
+    width: 2rem !important;
+    margin-top: 10px !important;
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 10px;
+    background: linear-gradient(to right, #101828, #475467);
+
+}
+
+
+.swiper-button-prev:after{
+    font-size: 15px !important;
+    color: #000;
+}
+.swiper-button-next:after{
+    color: #fff;
+    font-size: 15px !important;
+}
+.swiper-pagination{
+    bottom: 20px !important;
+}
+.swiper-pagination-bullet{
+    background-color: #101828 !important;
+    height: 12px !important;
+    width: 12px !important;
+}
+.dashboard-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.dashboard{
+    grid-column: 2 / -1;
+}
+.sidebar{
+    grid-column: 1 / 2;
+    width: 100%;
+   
+}

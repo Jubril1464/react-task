@@ -1,2 +1,2 @@
-import shop from './screen/shop'
-export default [shop];
+import dashboard from './screen/dashboard';
+export default [dashboard];
